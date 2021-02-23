@@ -6,15 +6,12 @@ import time
 from bs4 import BeautifulSoup
 
 def main():
-    start = time.time()
     REGION = "bihor"
     TOWN = "oradea"
 
     forSale(REGION, TOWN)
     forRent(REGION, TOWN)
     finish = time.time()
-
-    print(finish - start)
 
 def dataToInt(data):
     sq = 0
